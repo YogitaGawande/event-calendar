@@ -1,9 +1,9 @@
 
 const Header = (prop: { displayMonth: string | undefined, displayYear: number | undefined, handlePreviousClick: () => void, handleNextClick: () => void }) => {
     return (
-        <div className="flex flex-col sm:flex-row justify-between mt-3 mb-3 bg-gray-200 bg-opacity-70 p-7 rounded-full">
-            <div className="mb-3 sm:mb-0">
-                <h2 className="text-2xl font-bold leading-7 text-gray-900">
+        <div className="flex flex-col sm:flex-row justify-between mt-3 mb-3 bg-gray-200 bg-opacity-70 p-5 rounded-full">
+            <div className="mb-1 sm:mb-0 md:mb-0">
+                <h2 className="font-bold leading-7 text-gray-900 lg:text-2xl md:text-xl sm:text-sm">
                     Event Calendar - {prop.displayMonth} {prop.displayYear}
                 </h2>
             </div>

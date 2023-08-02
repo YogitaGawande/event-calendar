@@ -175,7 +175,7 @@ const EventCalendar: React.FC = () => {
                 displayYear={displayYear}
                 handlePreviousClick={handlePreviousClick}
                 handleNextClick={handleNextClick} />
-            {/* <div className="overflow-x-auto"> */}
+            <div className="overflow-x-auto overflow-y-hidden">
             <table className="w-full border">
                 <thead>
                     <tr>
@@ -216,7 +216,7 @@ const EventCalendar: React.FC = () => {
                                 return (
                                     <td
                                         key={`${date.toISOString()}-${hour}`}
-                                        className="p-2 text-center border"
+                                        className="p-1 text-center border"
                                     >
                                         {events.map((event: EventInterface, innerIndex: number) =>
 
@@ -257,7 +257,7 @@ const EventCalendar: React.FC = () => {
                     {showModal && (<AddEventModal></AddEventModal>)}
                 </tbody>
             </table>
-            {/* </div> */}
+            </div>
         </div>
     )
 };
